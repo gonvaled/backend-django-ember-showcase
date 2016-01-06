@@ -119,3 +119,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'collectstatic/')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# Select which index file to serve for the front-end Ember SPA. We set this up
+# in the environment, so that we can easily change this without code changes or
+# redeploy. This must be relative to the collectstatic directory
+FE_INDEX_HTML = os.environ['FE_INDEX_HTML']
