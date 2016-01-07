@@ -39,9 +39,13 @@ The project has been developed with Python 2.7.6, but should work with no (or li
 * Install the development requirements: `pip install -r requirements-dev.txt`
 * Start the server: `python mangage.py runserver`. Your app is reachable at `http://127.0.0.1:8000/`
 
-## TODO: Deploy to Heroku ##
+## Deploy to Heroku ##
 
-## TODO: Embed frontend release ##
+_TODO_
+
+## Embed frontend release ##
+
+_TODO_
 
 ## Legal ##
 
