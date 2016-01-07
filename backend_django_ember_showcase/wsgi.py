@@ -14,3 +14,7 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend_django_ember_showcase.settings")
 
 application = get_wsgi_application()
+
+# Use dj-static to serve static files
+from dj_static import Cling
+application = Cling(application)
