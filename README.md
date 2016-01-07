@@ -18,7 +18,7 @@ The sister (Ember frontend) project of this one can be found [here](https://gith
 
 This project started while writing this [blog post](http://blog.gonvaled.com/ember/Configuring-Django-and-EmberData-interoperability.html)
 
-## Packages used by this project ##
+## Used packages ##
 
 * `Django==1.9.1` : latest version of Django published in PyPi as of this writing
 * `dj-database-url==0.3.0` : database URL is defined on the environment
@@ -30,7 +30,7 @@ For serving in Heroku, we need extra packages
 * `gunicorn==19.4.5` : Python WSGI HTTP Server
 * `psycopg2==2.6.1` : PostgreSQL adapter for the Python programming language
 
-## Run the backend in localhost ##
+## Run the development backend in localhost ##
 
 The project has been developed with Python 2.7.6, but should work with no (or little) modifications with Python 3.
 
@@ -38,6 +38,10 @@ The project has been developed with Python 2.7.6, but should work with no (or li
 * Activate the virtualenv: `source venv2.7/bin/activate`
 * Install the development requirements: `pip install -r requirements-dev.txt`
 * Start the server: `python mangage.py runserver`. Your app is reachable at `http://127.0.0.1:8000/`
+
+## TODO: Deploy to Heroku ##
+
+## TODO: Embed frontend release ##
 
 ## Legal ##
 
