@@ -131,6 +131,10 @@ FE_INDEX_HTML = os.environ['FE_INDEX_HTML']
 
 # djangorestframework / djangorestframework-jsonapi
 
+JSON_API_FORMAT_KEYS = 'dasherize'  # dasherize / camelize / capitalize / underscore
+JSON_API_FORMAT_RELATION_KEYS = 'camelize'  # dasherize / camelize / capitalize / underscore
+JSON_API_PLURALIZE_RELATION_TYPE = True
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
