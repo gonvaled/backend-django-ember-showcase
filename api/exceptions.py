@@ -8,6 +8,7 @@ def custom_exception_handler(exc, context):
     # Call the rest_framework_json_api's exception handler first,
     # to get the standard error response.
     response = exception_handler(exc, context)
-    # TODO: is this correct? 422 in all exception cases?!
-    response.status_code = 422
+    if response:
+        # TODO: is this correct? 422 in all exception cases?!
+        response.status_code = 422
     return response
