@@ -1,4 +1,4 @@
-# Integrating Django and Ember
+# Integrating Django and Ember #
 
 Django allows you to write powerful and simple REST APIs with the help of [Django REST framework](http://www.django-rest-framework.org). [Ember.js](http://emberjs.com) is a JavaScript framework to help you write Single Page Applications. Integrating both platforms presents several hurdles, mainly caused by the fast pace of development of Ember, and the lack of documentation of both Ember and some of the required Django packages. Examples in the net are usually outdated.
 
@@ -18,7 +18,7 @@ The sister (Ember frontend) project of this one can be found [here](https://gith
 
 This project started while writing this [blog post](http://blog.gonvaled.com/ember/Configuring-Django-and-EmberData-interoperability.html)
 
-# Packages used by this project
+## Packages used by this project ##
 
 * `Django==1.9.1` : latest version of Django published in PyPi as of this writing
 * `dj-database-url==0.3.0` : database URL is defined on the environment
@@ -30,7 +30,7 @@ For serving in Heroku, we need extra packages
 * `gunicorn==19.4.5` : Python WSGI HTTP Server
 * `psycopg2==2.6.1` : PostgreSQL adapter for the Python programming language
 
-# Run the backend in localhost
+## Run the backend in localhost ##
 
 The project has been developed with Python 2.7.6, but should work with no (or little) modifications with Python 3.
 
@@ -38,3 +38,9 @@ The project has been developed with Python 2.7.6, but should work with no (or li
 * Activate the virtualenv: `source venv2.7/bin/activate`
 * Install the development requirements: `pip install -r requirements-dev.txt`
 * Start the server: `python mangage.py runserver`. Your app is reachable at `http://127.0.0.1:8000/`
+
+## Legal ##
+
+[Daniel Gonzalez](http://gonvaled.com) &copy; 2016
+
+[Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)
