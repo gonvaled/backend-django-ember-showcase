@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Installed by me
+    'rest_framework',  # djangorestframework
     # My applications
     'api',
 ]
@@ -126,3 +128,22 @@ STATICFILES_DIRS = (
 # in the environment, so that we can easily change this without code changes or
 # redeploy. This must be relative to the collectstatic directory
 FE_INDEX_HTML = os.environ['FE_INDEX_HTML']
+
+# djangorestframework
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',  # application/json
+        'rest_framework.parsers.FormParser',  # application/x-www-form-urlencoded
+    ),
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',  # application/json
+        'rest_framework.renderers.BrowsableAPIRenderer',
+        'rest_framework.renderers.AdminRenderer',
+    ),
+}
