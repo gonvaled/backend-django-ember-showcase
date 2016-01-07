@@ -129,7 +129,7 @@ STATICFILES_DIRS = (
 # redeploy. This must be relative to the collectstatic directory
 FE_INDEX_HTML = os.environ['FE_INDEX_HTML']
 
-# djangorestframework
+# djangorestframework / djangorestframework-jsonapi
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -138,12 +138,15 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PARSER_CLASSES': (
+        'rest_framework_json_api.parsers.JSONParser',  # application/vnd.api+json
         'rest_framework.parsers.JSONParser',  # application/json
         'rest_framework.parsers.FormParser',  # application/x-www-form-urlencoded
     ),
     'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework_json_api.renderers.JSONRenderer',  # application/vnd.api+json
         'rest_framework.renderers.JSONRenderer',  # application/json
         'rest_framework.renderers.BrowsableAPIRenderer',
         'rest_framework.renderers.AdminRenderer',
     ),
+    'DEFAULT_METADATA_CLASS': 'rest_framework_json_api.metadata.JSONAPIMetadata',
 }

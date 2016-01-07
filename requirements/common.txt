@@ -2,3 +2,4 @@ Django==1.9.1
 dj-database-url==0.3.0
 dj-static==0.0.6
 djangorestframework==3.3.2
+-e git+https://github.com/django-json-api/django-rest-framework-json-api.git@2f9a0cb973397887fc9d030e051c501dfa4d4108#egg=djangorestframework_jsonapi-develop
