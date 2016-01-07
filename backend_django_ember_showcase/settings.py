@@ -136,7 +136,7 @@ JSON_API_FORMAT_RELATION_KEYS = 'camelize'  # dasherize / camelize / capitalize 
 JSON_API_PLURALIZE_RELATION_TYPE = True
 
 REST_FRAMEWORK = {
-    'EXCEPTION_HANDLER': 'rest_framework_json_api.exceptions.exception_handler',
+    'EXCEPTION_HANDLER': 'api.exceptions.custom_exception_handler',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
